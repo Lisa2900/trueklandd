@@ -4,11 +4,11 @@
     "slug": "trueklandd",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/images/mundo.png",
     "userInterfaceStyle": "light",
     "newArchEnabled": true,
     "splash": {
-      "image": "./assets/splash-icon.png",
+      "image": "./assets/favicon.jpeg",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
@@ -16,13 +16,25 @@
       "supportsTablet": true
     },
     "android": {
+      "permissions": [
+        "CAMERA",
+        "READ_EXTERNAL_STORAGE",
+        "WRITE_EXTERNAL_STORAGE"
+      ],
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.quetzalcode.trueklandd"
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "18da9a86-be24-4015-a523-06fa9bf387e7"
+      }
+    },
+    "owner": "quetzalcode"
   }
 }
